@@ -35,3 +35,17 @@ follows_id INT (FK)
 
 
 follows.csv and tweets.csv loaded into the database (too large to include in this repository)
+
+## How It Works
+
+The program reads pre-generated tweets from the file tweets.csv. Data from follows.csv was 
+loaded into the follows table by using the 'data import utilities' feature from MySQL Workbench.
+
+It also auto-assigns tweet_ids and timestamps as the tweet is loaded into the database
+
+After all 1 million tweets have been loaded into the database, the program repeatedly picks a random 
+user and returns that user’s home timeline. We define the home timeline as the 10 most recent tweets 
+posted by users followed by our randomly selected user. For example, if user A follows X, Y, and Z, 
+then A’s home timeline consists of the 10 most recent tweets posted by X, Y, or Z. This process 
+simulates users opening the twitter app on their smartphone and refreshing the home timeline to see
+recent posts. 
