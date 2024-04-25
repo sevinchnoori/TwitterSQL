@@ -3,6 +3,7 @@
 When Twitter first started out, its engineers used MySQL as a backend relational database. 
 
 There are two key operations of twitter that my code supports:
+
 a) Users post tweets. We are ignoring hashtags. 
 
 b) Users retrieve all of the tweets posted by all users followed by that user. 
