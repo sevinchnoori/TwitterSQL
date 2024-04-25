@@ -25,6 +25,7 @@ tweet_ts DATETIME
 tweet_text VARCHAR(140)
 
 
+
 FOLLOWS – Who follows whom. The user “user_id” follows the user “follows_id”
 
 user_id INT (FK)
